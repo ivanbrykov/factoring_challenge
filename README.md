@@ -1,24 +1,31 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a factoring example app.
 
-Things you may want to cover:
+To run the project locally, follow these steps.
 
-* Ruby version
+1. Install ruby dependencies
 
-* System dependencies
+```
+bundle install
+```
 
-* Configuration
+2. Install JS dependencies
 
-* Database creation
+```
+yarn install
+```
 
-* Database initialization
+3. Create and migrate the DB:
 
-* How to run the test suite
+```
+rails db:drop; rails db:create; rails db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+4. Launch the server
 
-* Deployment instructions
+```
+./bin/dev
+```
 
-* ...
+5. Navigate your browser to http://localhost:3000/ (update the port number according to the output from the previous step)
